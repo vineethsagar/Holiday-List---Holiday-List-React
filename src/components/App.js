@@ -6,8 +6,8 @@ class App extends Component {
 
         return(
            <>
-//write your code here
-	</>
+            <h1>Holiday list react</h1>
+            </>
         )
     }
 }
