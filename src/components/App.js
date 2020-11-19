@@ -1,16 +1,17 @@
-import React, {Component, useState} from "react";
-import '../styles/App.css';
+import React, { Component, useState } from "react";
+import "../styles/App.css";
 
 class App extends Component {
-    render() {
-
-        return(
-           <>
-            <h1>Holiday list react</h1>
-            </>
-        )
-    }
+  render() {
+    const cities = ["Goa", "Darjeeling", "Lonavala"];
+    return (
+      <>
+        {cities.map((city, index) => (
+          <li key={index}>{city}</li>
+        ))}
+      </>
+    );
+  }
 }
-
 
 export default App;
